@@ -1,0 +1,57 @@
+:root {
+    --text-color: rgb(39, 5, 5);
+}
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: UnifrakturMaguntia;
+    font-size: 70px;
+    text-align: center;
+}
+
+h3 {
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+aside {
+    border: 1px solid var(--text-color);;
+}
+
+footer p {
+    font-style: italic;
+}
+
+.first-letter {
+    font-size: 40px;
+    float: left;
+    line-height: 40px;
+    padding-right: 2px;
+}
+
+#issue-information {
+    border-top: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+
+#issue-information, h2, h3 {
+    text-transform: uppercase;
+}
+
+#issue-information div:nth-child(1) {
+    text-align: left;
+}
+
+#issue-information div:nth-child(2) {
+    text-align: center;
+}
+
+#issue-information div:nth-child(3) {
+    text-align: right;
+}
