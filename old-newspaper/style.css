@@ -21,11 +21,25 @@ h3 {
 }
 
 aside {
-    border: 1px solid var(--text-color);;
+    border: 1px solid var(--text-color);
+    padding: 15px;
+}
+
+aside p {
+    margin: 0px;
 }
 
 footer p {
     font-style: italic;
+}
+
+article {
+    width: 400px;
+    text-align: justify;
+}
+
+article h2,h3 {
+    text-align: center;
 }
 
 .first-letter {
@@ -38,6 +52,11 @@ footer p {
 #issue-information {
     border-top: 2px solid var(--text-color);
     border-bottom: 2px solid var(--text-color);
+    display: flex;
+}
+
+#issue-information div {
+    flex: 1;
 }
 
 #issue-information, h2, h3 {
@@ -46,6 +65,7 @@ footer p {
 
 #issue-information div:nth-child(1) {
     text-align: left;
+    padding-left: 20px;
 }
 
 #issue-information div:nth-child(2) {
@@ -54,4 +74,5 @@ footer p {
 
 #issue-information div:nth-child(3) {
     text-align: right;
+    padding-right: 20px;
 }
