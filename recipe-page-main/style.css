@@ -42,11 +42,37 @@ h3 {
 }
 
 li {
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 li:not(:last-child) {
   margin-bottom: 15px;
+}
+
+hr {
+  height: 1px;
+  background-color: hsl(30, 18%, 87%);
+  border: 0;
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 15px 40px;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+tr td:last-child {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
 }
 
 #preparation-time {
@@ -70,4 +96,9 @@ li:not(:last-child) {
 
 #ingredients li::marker {
   color: hsl(14, 45%, 36%);
+}
+
+#instructions li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
 }
