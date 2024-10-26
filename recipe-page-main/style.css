@@ -4,20 +4,33 @@ body {
   font-size: 16px;
   font-family: 'Outfit';
   font-weight: 400;
+  margin: 0;
 }
 
 main {
   box-sizing: border-box;
   background-color: hsl(0, 0%, 100%);
-  width: 740px;
+  width: 100%;
   padding: 40px;
-  margin: 125px auto;
-  border-radius: 25px;
 }
 
 main img {
-  width: 100%;
-  border-radius: 15px;
+  width: calc(100% + 80px);
+  margin: -40px -40px 0px -40px;
+}
+
+@media (min-width: 500px) {
+  main {
+    width: 60%;
+    margin: 125px auto;
+    border-radius: 25px;
+  }
+
+  main img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 0;
+  }
 }
 
 h1, h2 {
@@ -27,12 +40,12 @@ h1, h2 {
 
 h1 {
   color: hsl(24, 5%, 18%);
-  font-size: 40px;
+  font-size: 38px;
 }
 
 h2 {
   color: hsl(14, 45%, 36%);
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h3 {
